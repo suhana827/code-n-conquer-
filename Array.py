@@ -1,7 +1,7 @@
 # Given an array of integers, return true if any value appears
 # at least twice in the array, else return false.
 
-# def findNum(arr):
+# def findNum():
 #     for i in range(len(arr)):
 #         for j in range(i+1,(len(arr))):
 #             if arr[i] == arr[j]:
@@ -10,7 +10,7 @@
 #     return "false"
 
 # arr = [1,2,3,3,5]
-# print(findNum(arr))
+# print(findNum())
 
 
 # Find the index of the first occurrence of a target number in a sorted 
