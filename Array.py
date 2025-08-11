@@ -40,29 +40,85 @@
 # You are given two sorted arrays. Merge them into one 
 # sorted array(without using sort function).
 
-def sort_array(arr1,arr2):
-    arr3 = []
-    i = 0
-    j = 0
-    while i < len(arr1) and j < len(arr2):
-        if arr1[i] < arr2[j]:
-            arr3.append(arr1[i])
-            i += 1
-        else:
-            arr3.append(arr2[j])
-            j += 1
+# def sort_array(arr1,arr2):
+#     arr3 = []
+#     i = 0
+#     j = 0
+#     while i < len(arr1) and j < len(arr2):
+#         if arr1[i] < arr2[j]:
+#             arr3.append(arr1[i])
+#             i += 1
+#         else:
+#             arr3.append(arr2[j])
+#             j += 1
 
-    while i < len(arr1):
-        arr3.append(arr1[i])
-        i += 1
+#     while i < len(arr1):
+#         arr3.append(arr1[i])
+#         i += 1
 
-    while j < len(arr2):
-        arr3.append(arr2[j])
-        j += 1
+#     while j < len(arr2):
+#         arr3.append(arr2[j])
+#         j += 1
 
-    return arr3
+#     return arr3
   
 
-arr1 = [1,2,3]
-arr2 = [4,5,6]
-print(sort_array(arr1,arr2))
+# arr1 = [1,2,3]
+# arr2 = [4,5,6]
+# print(sort_array(arr1,arr2))
+
+
+
+#  Return the second largest number in the array. If it doesn't exist, return null.
+
+# def second_largest(arr):
+#     largest = 0
+#     second = 0
+#     for i in range(len(arr)):
+#         for j in range(i + 1, len(arr)):  
+#             if arr[i] > arr[j]:
+#                 if arr[i] > largest:
+#                     second = largest
+#                     largest = arr[i]
+#                 elif arr[i] > second and arr[i] != largest:
+#                     second = arr[i]
+#             else:
+#                 if arr[j] > largest:
+#                     second = largest
+#                     largest = arr[j]
+#                 elif arr[j] > second and arr[j] != largest:
+#                     second = arr[j]
+#     return second if second != 0 else None
+
+
+# arr = [1, 4, 2, 6, 7,7]
+# print(second_largest(arr))  
+
+    
+# Two Sum Problem
+# Given an array of integers nums and an integer target, return the indices 
+# of the two numbers such that they add up to target.
+
+
+# def twoNum(nums,target):
+#     pairs = []
+#     for i in range(len(nums)):
+#         for j in range(i+1,len(nums)):
+#             if nums[i] + nums[j] == target:
+#                 pairs.append((nums[i], nums[j]))
+            
+#     return pairs
+
+# nums = [2,3,5,4,1]
+# target = 5
+# print(twoNum(nums,target))   
+
+# Reversing an array
+# nums = [2,4,7,3,5,8]
+# reverse_nums = []
+# i = len(nums)-1
+# while i >= 0:
+#     reverse_nums.append((nums[i]))
+#     i -= 1
+# print(reverse_nums)
+
