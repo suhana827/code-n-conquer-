@@ -15,7 +15,11 @@
 #         j -= 1
 #     return "true"
 
-# print(stringChecker())     
+# print(stringChecker())    
+
+
+# reversing a string 
+
 
 
    
