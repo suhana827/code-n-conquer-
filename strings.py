@@ -30,15 +30,29 @@
 
 # Checking if a string is palindrome(another way)
 
-string = input("Enter any word:")
-reverse_word = ""
-for i in range(len(string)-1,-1,-1):
-    reverse_word = reverse_word + string[i]
+# string = input("Enter any word:")
+# reverse_word = ""
+# for i in range(len(string)-1,-1,-1):
+#     reverse_word = reverse_word + string[i]
    
-if string == reverse_word:
-    print("true","",string," ",reverse_word)
-else:
-    print("not a palindrome")  
+# if string == reverse_word:
+#     print("true","",string," ",reverse_word)
+# else:
+#     print("not a palindrome")  
 
 
+
+# Longest Word in a Sentence
+# Given a string sentence, write a function to return the longest
+# word in it. Ignore punctuation.
    
+sentence = input()
+words = sentence.split()
+
+longest = ""
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+
+print(longest)
+
