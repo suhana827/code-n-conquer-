@@ -20,6 +20,25 @@
 
 # reversing a string 
 
+# word = input("enter you name:")
+# reverse_word = ""
+# for i in range(len(word)-1,-1,-1):
+#     reverse_word  = reverse_word + word[i]
+# print(reverse_word)
+
+
+
+# Checking if a string is palindrome(another way)
+
+string = input("Enter any word:")
+reverse_word = ""
+for i in range(len(string)-1,-1,-1):
+    reverse_word = reverse_word + string[i]
+   
+if string == reverse_word:
+    print("true","",string," ",reverse_word)
+else:
+    print("not a palindrome")  
 
 
    
