@@ -128,17 +128,17 @@
 # Write a function that moves all 0's to the end of an array while 
 # maintaining the relative order of the non-zero elements.
 
-def zeroes(arr):
-    i = 0  
-    for j in range(len(arr)): 
-        if arr[j] != 0:
-            arr[i] = arr[j]
-            i += 1
-    while i < len(arr):
-        arr[i] = 0
-        i += 1
+# def zeroes(arr):
+#     i = 0  
+#     for j in range(len(arr)): 
+#         if arr[j] != 0:
+#             arr[i] = arr[j]
+#             i += 1
+#     while i < len(arr):
+#         arr[i] = 0
+#         i += 1
 
-    return arr
+#     return arr
 
-arr = [2, 0, 3, 4, 0, 1, 6, 7, 0]
-print(zeroes(arr))
+# arr = [2, 0, 3, 4, 0, 1, 6, 7, 0]
+# print(zeroes(arr))
