@@ -46,13 +46,15 @@
 # Given a string sentence, write a function to return the longest
 # word in it. Ignore punctuation.
    
-sentence = input()
-words = sentence.split()
+# sentence = input()
+# words = sentence.split()
 
-longest = ""
-for word in words:
-    if len(word) > len(longest):
-        longest = word
+# longest = ""
+# for word in words:
+#     if len(word) > len(longest):
+#         longest = word
 
-print(longest)
+# print(longest)
+
+
 
